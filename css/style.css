@@ -573,7 +573,7 @@ h1 {
 /*
  * @media
  */ 
-@media (max-width: 576px) {
+@media (max-width: 576px) {	
 	.container {
 		max-width: 540px;
 		width: 100%;
@@ -618,18 +618,19 @@ h1 {
 	.header__trigramm-btn:focus, .header__trigramm-btn:active {
 		font-size: 3.2rem;
 	}	
+	.header__trigramm-menu-list {
+		display: flex;
+		flex-direction: column;
+	}	
 	.header__trigramm-menu {	
 		display: none;
 		position: absolute;
 	}
 	.show {
-		display: block;
+		display: inline-block;
 		z-index: 13;
-
-	}
-	.header__trigramm-menu-list {
-		display: flex;
-		flex-direction: column;
+		top: 1rem;
+		right: 4.5rem;
 	}
 	.trigramm-item {
 		display: inline-block;
@@ -759,11 +760,6 @@ h1 {
 	.page-info__item-title {
 	    font-size: 4rem;
 	}	
-	.header__trigramm-menu {
-		position: absolute;
-		top: 6.2rem;
-		right: 0rem;
-	}
 	.header__contact-phone {
 	    font-size: 2.1rem;
 	    line-height: 2rem;
